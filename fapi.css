@@ -1,0 +1,11 @@
+.photo {
+    float: left;
+    margin: 10px;
+    overflow: hidden;
+    height: 120px;
+}
+
+.photo img {
+    min-width: 240px;
+    max-width: 240px;
+}

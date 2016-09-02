@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FLICKR TAG SEARCH</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="fapi.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Returned Photos</h1>
+    <div id="photos"></div>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="fapi.js"></script>
+    <script>
+      setupPhotos(['rainbows','butterflies'], function (err, result) {
+      if (err) { return console.error(err); }
+      });
+    </script>
+  </body>
+</html>
